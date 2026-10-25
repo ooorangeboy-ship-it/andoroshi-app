@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>andoroshi — LIVE Trend & Market Intelligence</title>
+  <title>andoroshi — LIVE Brand, Link & Ad Creative Intelligence</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
@@ -98,12 +98,30 @@
         growth: '+340%',
         blueOceanScore: 91,
         format: '인스타 릴스 · 메타 장기집행 (38일 연속)',
-        platformSource: '올리브영 건강식품 실시간 2위',
+        platformSource: '1위 브랜드: 퓨어슬립 / 올리브영',
         thumbnailTitle: '“새벽 3시까지 못 자던 내가 15분 만에 기절한 이유”',
         thumbnailSub: '해외 직구 대신 올영에서 쓸어담는 무설탕 식물성 멜라토닌',
         duration: '0:24',
         views: '184만',
         saves: '4.2만',
+        topAds: [
+          {
+            brand: '퓨어슬립 (PureSleep)',
+            platform: 'Meta(인스타 릴스) 38일 연속 집행 중',
+            adType: '새벽 공감 밈 + 젤리 ASMR 시연형',
+            headline: '“양치 후에도 그대로 씹어 먹는 무설탕 꿀잠 구미”',
+            visualScene: '시계 03:12 AM 클로즈업 후 피스타치오 추출 젤리를 씹는 장면 전환',
+            ctaText: '댓글에 [꿀잠] 남기면 100원 체험딜 DM 발송',
+            metaAdLibraryUrl: 'https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&q=%EC%8B%9D%EB%AC%BC%EC%84%B1%20%EB%A9%9C%EB%9D%BC%ED%86%A0%EB%8B%8C',
+            tiktokCreativeUrl: 'https://www.tiktok.com/search?q=%EC%8B%9D%EB%AC%BC%EC%84%B1%EB%A9%9C%EB%9D%BC%ED%86%A0%EB%8B%8C',
+            youtubeShortsUrl: 'https://www.youtube.com/results?search_query=%EC%8B%9D%EB%AC%BC%EC%84%B1+%EB%A9%9C%EB%9D%BC%ED%86%A0%EB%8B%8C+%EC%87%BC%EC%B8%A0'
+          }
+        ],
+        externalAdLinks: {
+          metaLibrary: 'https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&q=%EC%8B%9D%EB%AC%BC%EC%84%B1%20%EB%A9%9C%EB%9D%BC%ED%86%A0%EB%8B%8C',
+          naverShopping: 'https://search.shopping.naver.com/search/all?query=%EC%8B%9D%EB%AC%BC%EC%84%B1%20%EB%A9%9C%EB%9D%BC%ED%86%A0%EB%8B%8C%20%EA%B5%AC%EB%AF%B8',
+          oliveyoungSearch: 'https://www.oliveyoung.co.kr/store/search/getSearchMain.do?query=%EB%A9%9C%EB%9D%BC%ED%86%A0%EB%8B%8C'
+        },
         hookStructure: [
           { step: '초반 3초 (Hook)', desc: '시계 03:12 AM 클로즈업 + 피곤한 눈 비비는 릴스 공감 밈' },
           { step: '중반 12초 (Body)', desc: '합성 수면유도제 부작용 언급 → 피스타치오 추출 식물성 원료 & 젤리 제형 강조' },
@@ -113,75 +131,25 @@
           naver: { label: '네이버 월간 검색량', value: '148,500회', growth: '+340%', sub: '블로그 리뷰 4,200건 돌파' },
           reels: { label: '릴스 평균 조회수', value: '62만 회', growth: '+410%', sub: '댓글 DM 자동발송 전환율 14.2%' }
         },
-        platformRankingTitle: '올리브영 · 네이버 쇼핑 매칭 TOP 3',
+        platformRankingTitle: '실시간 브랜드 & 구매 링크 TOP 3',
         rankings: [
-          { rank: 1, name: '퓨어슬립 식물성 멜라토닌 타트체리 구미 60구', price: '28,900원', rating: '4.8', reviews: '4,820개', badge: '올영 1위' },
-          { rank: 2, name: '나이트랩 피스타치오 멜라토닌 정 30일분', price: '32,000원', rating: '4.6', reviews: '2,150개', badge: '네이버 급상승' },
-          { rank: 3, name: '닥터웰니스 딥슬립 마그네슘+멜라토닌 젤리', price: '24,500원', rating: '4.7', reviews: '1,490개', badge: '릴스 바이럴' }
+          { rank: 1, brand: '퓨어슬립', name: '퓨어슬립 식물성 멜라토닌 타트체리 구미 60구', price: '28,900원', link: 'https://search.shopping.naver.com/search/all?query=%EC%8B%9D%EB%AC%BC%EC%84%B1+%EB%A9%9C%EB%9D%BC%ED%86%A0%EB%8B%8C+%EA%B5%AC%EB%AF%B8', mallName: '올리브영/네이버', badge: '올영 1위' },
+          { rank: 2, brand: '나이트랩', name: '나이트랩 피스타치오 멜라토닌 정 30일분', price: '32,000원', link: 'https://search.shopping.naver.com/search/all?query=%ED%94%BC%EC%8A%A4%ED%83%80%EC%B9%98%EC%98%A4+%EB%A9%9C%EB%9D%BC%ED%86%A0%EB%8B%8C', mallName: '네이버 브랜드스토어', badge: '네이버 급상승' }
         ],
         vocPainPoints: [
           { issue: '구미(젤리) 표면에 설탕 코팅이 많아 자기 전 양치 후 먹기 찝찝함', ratio: 44 },
-          { issue: '알약 형태는 목넘김이 불편하고 특유의 허브 냄새가 올라옴', ratio: 31 },
-          { issue: '1통(1개월분) 가격이 3만 원 이상으로 장기 복용 시 부담스러움', ratio: 25 }
+          { issue: '알약 형태는 목넘김이 불편하고 특유의 허브 냄새가 올라옴', ratio: 31 }
         ],
         aiStrategies: [
-          '“양치 후에도 그대로 씹어 드세요. 충치 걱정 없는 100% 자일리톨 무설탕 슬립 구미”',
-          '“직구 배송 2주 기다리지 마세요. 오늘 주문하면 내일 밤 바로 꿀잠 자는 국내 정식 식약처 인증”'
+          '“양치 후에도 그대로 씹어 드세요. 충치 걱정 없는 100% 자일리톨 무설탕 슬립 구미”'
         ],
         channelScripts: {
           naver: '• [파워링크/쇼핑검색 제목]: 무설탕 식물성 멜라토닌 구미 | 양치 후 먹는 꿀잠젤리',
-          reels: '• [0~3초 화면 자막]: “자기 전 핸드폰 보느라 또 새벽 3시 넘긴 사람?”\n• [매니챗 유도]: “댓글에 [꿀잠] 치면 체험딜 링크 바로 보내드려요!”',
+          reels: '• [0~3초 화면 자막]: “자기 전 핸드폰 보느라 또 새벽 3시 넘긴 사람?”',
           youtube: '• [쇼츠 내레이션]: “현직 약사가 수면유도제 대신 자기 전에 딱 1알 챙겨 먹는 젤리가 있습니다.”',
           tiktok: '• [챌린지 포맷]: #기절젤리챌린지 — 먹고 눕는 순간 아침 해 뜨는 장면으로 전환'
         },
         crossChannelFunnel: '틱톡·릴스에서 #수면루틴GRWM 영상으로 호기심 유발 → 댓글 DM으로 유입 → 네이버 브랜드 검색으로 최종 구매 전환'
-      },
-      {
-        id: 'ref-6',
-        category: 'app',
-        categoryLabel: '모바일 앱 · 디지털',
-        primaryChannel: 'reels',
-        activeChannels: ['reels', 'instagram', 'tiktok', 'naver'],
-        memeTag: '#새벽감성운세 #AI사주멘탈케어',
-        keyword: '프리미엄 AI 사주 · 웰니스 멘탈케어 앱',
-        growth: '+390%',
-        blueOceanScore: 95,
-        format: '인스타 릴스 · 틱톡 스토리텔링 UA 소재',
-        platformSource: '앱스토어 라이프스타일 급상승 1위',
-        thumbnailTitle: '“내 불안함의 이유를 명리학으로 가장 다정하게 안아주는 AI”',
-        thumbnailSub: '자극적인 흉살 겁주기 대신, 오늘 내 마음을 지키는 럭셔리 웰니스 운세',
-        duration: '0:27',
-        views: '210만',
-        saves: '6.8만',
-        hookStructure: [
-          { step: '초반 3초 (Hook)', desc: '“요즘 왜 이렇게 마음이 조급할까?” 밤하늘 감성 내레이션으로 깊은 공감 유도' },
-          { step: '중반 15초 (Body)', desc: '생년월일시 입력 즉시 내 기질과 대운 흐름을 분석하고 따뜻한 처방전을 건네는 UI 시연' },
-          { step: '후반 9초 (CTA)', desc: '“지금 무료로 내 올해 감정 날씨와 귀인 시기 확인하기”' }
-        ],
-        channelMetrics: {
-          naver: { label: '네이버 검색량', value: '112,000회', growth: '+280%', sub: 'AI 사주 / 이직운 검색 급증' },
-          reels: { label: '릴스 광고 전환율', value: '210만 회', growth: '+390%', sub: '새벽 11시~2시 감성 타깃 최고 효율' }
-        },
-        platformRankingTitle: '앱스토어 · 구글플레이 라이프스타일 TOP 3',
-        rankings: [
-          { rank: 1, name: '안도(Ando) - 마음을 읽는 프리미엄 웰니스 사주 AI', price: '무료 (인앱결제)', rating: '4.9', reviews: '14,200개', badge: '급상승 1위' },
-          { rank: 2, name: '포스텔러 - 운세, 사주, 타로, 궁합 대표 앱', price: '무료 (인앱결제)', rating: '4.8', reviews: '92,400개', badge: '카테고리 1위' }
-        ],
-        vocPainPoints: [
-          { issue: '기존 운세 앱들은 팝업 광고가 너무 덕지덕지 붙어 있어 몰입감이 깨짐', ratio: 46 },
-          { issue: '불안을 자극해 고액 결제를 유도하는 공포 마케팅에 피로감', ratio: 35 }
-        ],
-        aiStrategies: [
-          '“겁주고 불안하게 만드는 사주는 그만. 흔들리는 새벽, 당신의 마음을 다독이는 웰니스 사주 테라피”',
-          '“전면 배너 광고 0%! 오직 나만의 호흡으로 읽어나가는 프라이빗 럭셔리 저널 UI”'
-        ],
-        channelScripts: {
-          naver: '• [브랜드검색/블로그]: 소름 돋는데 마음은 편안해지는 AI 사주 후기',
-          reels: '• [0~3초]: “유독 나만 뒤처지는 것 같은 밤이라면, 지금 당신의 계절이 잠시 겨울일 뿐이에요.”',
-          youtube: '• [쇼츠 기획]: “MBTI보다 10배 정확하다는 내 타고난 기질과 번아웃 극복법”',
-          tiktok: '• [바이럴 루프]: 친구와 내 사주 오행 궁합 결과 카드 공유 챌린지'
-        },
-        crossChannelFunnel: '릴스·틱톡 감성 카피로 앱 설치 유도 → 앱 내 오늘의 안도 카드를 인스타 스토리에 공유하게 만들어 오가닉 바이럴 완성'
       }
     ];
 
@@ -190,26 +158,24 @@
       const [selectedChannel, setSelectedChannel] = useState('all');
       const [searchQuery, setSearchQuery] = useState('');
       const [liveInput, setLiveInput] = useState('');
-      const [savedIds, setSavedIds] = useState(['ref-1', 'ref-6']);
+      const [savedIds, setSavedIds] = useState(['ref-1']);
       const [showSavedOnly, setShowSavedOnly] = useState(false);
       const [activeRef, setActiveRef] = useState(null);
-      const [activeTab, setActiveTab] = useState('market');
+      const [activeTab, setActiveTab] = useState('ads');
       const [scriptChannelTab, setScriptChannelTab] = useState('reels');
       const [copiedIndex, setCopiedIndex] = useState(null);
       const [isSyncing, setIsSyncing] = useState(false);
       const [lastSyncTime, setLastSyncTime] = useState('실시간 API 엔진 대기 중');
       const [apiStatusMsg, setApiStatusMsg] = useState('');
       const [references, setReferences] = useState(INITIAL_REFERENCES);
-      const [sortBy, setSortBy] = useState('growth');
       const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-      // 진짜 백엔드 API(/api/sync)를 호출하여 실시간 카드를 생성하고 모달까지 바로 열어주는 핵심 함수
       const runLiveMarketResearch = async (targetWord) => {
         const word = (targetWord || liveInput || searchQuery || '식물성 멜라토닌 구미').trim();
         if (!word) return;
 
         setIsSyncing(true);
-        setApiStatusMsg(`'${word}' 네이버 쇼핑 & Gemini AI 실시간 분석 중...`);
+        setApiStatusMsg(`'${word}' 브랜드·상품링크·인기 광고소재 실시간 수집 중...`);
 
         try {
           const res = await fetch(`/api/sync?keyword=${encodeURIComponent(word)}&t=${Date.now()}`);
@@ -217,24 +183,23 @@
           if (data.success && data.item) {
             setReferences((prev) => [data.item, ...prev.filter((r) => r.keyword !== data.item.keyword)]);
             setLastSyncTime(data.syncedAt);
-            setApiStatusMsg(`✅ '${word}' 실시간 분석 완료! (네이버: ${data.debugStatus?.naver || 'OK'} / AI: ${data.debugStatus?.gemini || 'OK'})`);
+            setApiStatusMsg(`✅ '${word}' 브랜드·링크·광고소재 분석 완료! (네이버: ${data.debugStatus?.naver || 'OK'} / AI: ${data.debugStatus?.gemini || 'OK'})`);
             setSelectedCategory('all');
             setSelectedChannel('all');
             setShowSavedOnly(false);
             setSearchQuery('');
             setActiveRef(data.item);
-            setActiveTab('market');
+            setActiveTab('ads');
           } else {
             setApiStatusMsg('⚠️ 서버 응답 오류: ' + (data.error || '확인 필요'));
           }
         } catch (err) {
-          setApiStatusMsg('⚠️ /api/sync.js 파일이 없거나 배포 중입니다.');
+          setApiStatusMsg('⚠️ /api/sync.js 배포 반영 중입니다. 10초 뒤 다시 눌러보세요.');
         } finally {
           setIsSyncing(false);
         }
       };
 
-      // 첫 접속 시 자동으로 실시간 데이터 1회 가져오기
       useEffect(() => {
         runLiveMarketResearch('식물성 멜라토닌 구미');
       }, []);
@@ -271,7 +236,7 @@
             <div className="flex items-center gap-2">
               <div className="w-7 h-7 rounded-lg bg-[#866143] flex items-center justify-center font-bold text-[#F2F1ED] text-sm">a.</div>
               <span className="text-lg font-extrabold tracking-tight text-[#292824]">ando<span className="text-[#866143]">roshi</span></span>
-              <span className="text-[10px] bg-[#866143] text-[#F2F1ED] px-1.5 py-0.5 rounded font-bold">LIVE</span>
+              <span className="text-[10px] bg-[#866143] text-[#F2F1ED] px-1.5 py-0.5 rounded font-bold">PRO</span>
             </div>
             <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="px-2.5 py-1.5 rounded-lg bg-[#292824] text-[#F2F1ED] text-xs font-bold">
               {mobileMenuOpen ? '닫기' : '메뉴'}
@@ -286,7 +251,7 @@
                   <div className="w-8 h-8 rounded-lg bg-[#866143] flex items-center justify-center font-black text-[#F2F1ED] text-lg">a.</div>
                   <div>
                     <span className="text-xl font-extrabold tracking-tight text-[#292824]">ando<span className="text-[#866143]">roshi</span></span>
-                    <span className="block text-[10px] text-[#866143] font-extrabold tracking-wider uppercase">LIVE API Intelligence</span>
+                    <span className="block text-[10px] text-[#866143] font-extrabold tracking-wider uppercase">Brand & Ad Intelligence</span>
                   </div>
                 </div>
               </div>
@@ -335,19 +300,18 @@
                 disabled={isSyncing}
                 className="w-full py-2.5 px-3 rounded-xl bg-[#866143] text-xs font-extrabold text-[#F2F1ED] hover:opacity-90 transition-all"
               >
-                {isSyncing ? '🚀 실시간 수집·분석 중...' : '↻ 즉시 실시간 동기화 실행'}
+                {isSyncing ? '🚀 브랜드·광고 수집 중...' : '↻ 즉시 실시간 동기화 실행'}
               </button>
             </div>
           </aside>
 
           {/* 우측 메인 */}
           <div className="flex-1 flex flex-col min-w-0">
-            {/* 상단 실시간 AI 시장조사 생성 바 */}
             <header className="sticky top-14 lg:top-0 z-20 bg-[#F2F1ED]/95 backdrop-blur-md border-b border-[#DEDAD2] px-4 lg:px-6 py-4">
               <div className="p-3.5 rounded-2xl bg-[#EAE6DF] border-2 border-[#866143] mb-3">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs font-extrabold text-[#866143]">⚡ 실시간 네이버 쇼핑 & Gemini AI 시장조사 생성기</span>
-                  <span className="text-[11px] font-bold text-[#292824]/70">{apiStatusMsg}</span>
+                  <span className="text-xs font-extrabold text-[#866143]">⚡ 실시간 브랜드 · 상품 링크 · 인기 광고 소재(Winning Ads) 추출기</span>
+                  <span className="text-[11px] font-bold text-[#292824]/80">{apiStatusMsg}</span>
                 </div>
                 <form
                   onSubmit={(e) => {
@@ -360,7 +324,7 @@
                     type="text"
                     value={liveInput}
                     onChange={(e) => setLiveInput(e.target.value)}
-                    placeholder="분석할 상품/키워드를 입력하고 엔터를 치세요! (예: 레티놀 앰플, 단백질 쉐이크, 무소음 마우스)"
+                    placeholder="키워드를 입력하면 1위 브랜드, 구매 링크, 다수 노출 광고 소재를 즉시 뽑아옵니다! (예: 레티놀 앰플)"
                     className="flex-1 bg-[#F2F1ED] border border-[#D5CFC4] focus:border-[#866143] rounded-xl px-4 py-2.5 text-sm font-bold text-[#292824] placeholder-[#292824]/45 focus:outline-none"
                   />
                   <button
@@ -368,7 +332,7 @@
                     disabled={isSyncing}
                     className="px-5 py-2.5 rounded-xl bg-[#866143] text-[#F2F1ED] text-xs font-extrabold shrink-0 hover:bg-[#292824] transition-all"
                   >
-                    {isSyncing ? 'AI가 실시간 분석 중 (3초)...' : '🔍 실시간 AI 시장조사 실행'}
+                    {isSyncing ? 'AI가 브랜드·광고 분석 중...' : '🔍 실시간 광고·시장조사 실행'}
                   </button>
                 </form>
               </div>
@@ -378,14 +342,14 @@
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="아래 생성된 카드 내 검색 필터..."
+                  placeholder="생성된 카드 내 검색 필터..."
                   className="w-full max-w-xs bg-[#EAE6DF] border border-[#D5CFC4] rounded-xl px-3 py-1.5 text-xs text-[#292824]"
                 />
-                <span className="text-[11px] font-bold text-[#866143]">키워드를 클릭해도 실시간 AI 분석이 바로 실행됩니다 ▼</span>
+                <span className="text-[11px] font-bold text-[#866143]">아래 급상승 키워드를 클릭해도 실시간 광고·브랜드 분석이 실행됩니다 ▼</span>
               </div>
             </header>
 
-            {/* 실시간 급상승 매트릭스 (클릭 시 해당 키워드로 실제 API 즉시 호출!) */}
+            {/* 실시간 급상승 매트릭스 */}
             <section className="px-4 lg:px-6 pt-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3">
                 {INITIAL_MATRIX.map((box) => (
@@ -405,7 +369,7 @@
                           className="w-full flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-[#866143] hover:text-[#F2F1ED] text-left group transition-all"
                         >
                           <span className="text-xs font-bold truncate">{kw.rank}. {kw.word}</span>
-                          <span className="text-[10px] font-extrabold text-[#866143] group-hover:text-[#F2F1ED] shrink-0 ml-2">LIVE 분석 ›</span>
+                          <span className="text-[10px] font-extrabold text-[#866143] group-hover:text-[#F2F1ED] shrink-0 ml-2">광고·브랜드 ›</span>
                         </button>
                       ))}
                     </div>
@@ -414,23 +378,26 @@
               </div>
             </section>
 
-            {/* 카드 그리드 */}
+            {/* 카드 그리드 (브랜드명, 직결 링크, 대표 광고 소재 노출) */}
             <main className="p-4 lg:p-6 flex-1">
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                 {filteredReferences.map((item) => {
                   const isSaved = savedIds.includes(item.id);
+                  const topRank = item.rankings?.[0] || {};
+                  const topAd = item.topAds?.[0] || {};
+
                   return (
                     <article
                       key={item.id}
-                      onClick={() => { setActiveRef(item); setActiveTab('market'); }}
+                      onClick={() => { setActiveRef(item); setActiveTab('ads'); }}
                       className={`bg-[#EAE6DF] border-2 ${item.isLiveGenerated ? 'border-[#866143]' : 'border-[#D5CFC4]'} hover:border-[#292824] rounded-2xl overflow-hidden flex flex-col justify-between transition-all hover:-translate-y-1 cursor-pointer`}
                     >
                       <div>
-                        <div className="p-4 bg-[#E2DDD4] flex flex-col justify-between border-b border-[#D5CFC4] min-h-[175px]">
-                          <div className="flex items-center justify-between">
+                        <div className="p-4 bg-[#E2DDD4] flex flex-col justify-between border-b border-[#D5CFC4]">
+                          <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center gap-1.5">
                               {item.isLiveGenerated && (
-                                <span className="px-2 py-0.5 rounded bg-[#292824] text-[#F2F1ED] text-[10px] font-extrabold">⚡ LIVE 생성</span>
+                                <span className="px-2 py-0.5 rounded bg-[#292824] text-[#F2F1ED] text-[10px] font-extrabold">⚡ LIVE</span>
                               )}
                               <span className="px-2.5 py-1 rounded-lg bg-[#F2F1ED] text-[11px] font-bold text-[#292824] border border-[#D5CFC4]">{item.categoryLabel}</span>
                               <span className="px-2 py-1 rounded-lg bg-[#866143] text-[#F2F1ED] text-[11px] font-extrabold">{item.growth} ▲</span>
@@ -439,36 +406,68 @@
                               {isSaved ? '저장됨' : '저장'}
                             </button>
                           </div>
-                          <div className="my-3">
+                          <div className="my-2">
                             <div className="text-[11px] font-extrabold text-[#866143] mb-1">{item.memeTag}</div>
                             <h3 className="text-sm font-extrabold text-[#292824] leading-snug">{item.thumbnailTitle}</h3>
                           </div>
                           <div className="flex items-center justify-between text-[11px] pt-2 border-t border-[#D5CFC4]">
-                            <span className="font-bold text-[#866143]">{item.platformSource}</span>
-                            <span className="font-mono text-[10px] text-[#292824] font-bold">{item.format}</span>
+                            <span className="font-extrabold text-[#866143]">🏆 대표 브랜드: {topRank.brand || topAd.brand || '실시간 매칭'}</span>
+                            <span className="font-mono text-[10px] text-[#292824] font-bold">{topRank.price || ''}</span>
                           </div>
                         </div>
-                        <div className="p-4">
-                          <div className="flex justify-between text-[11px] text-[#866143] font-semibold mb-1">
-                            <span>분석 키워드</span>
-                            <span className="font-bold text-[#292824]">블루오션 {item.blueOceanScore}점</span>
+
+                        <div className="p-4 space-y-2.5">
+                          <div className="flex justify-between items-center">
+                            <div className="text-base font-extrabold text-[#292824]">{item.keyword}</div>
+                            <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-[#F2F1ED] border border-[#D5CFC4] text-[#866143]">블루오션 {item.blueOceanScore}점</span>
                           </div>
-                          <div className="text-base font-extrabold text-[#292824] mb-3">{item.keyword}</div>
+
+                          {/* 1. 실시간 브랜드 & 상품 바로가기 링크 박스 */}
                           <div className="p-3 rounded-xl bg-[#F2F1ED] border border-[#D5CFC4] space-y-1.5">
-                            <div className="flex justify-between text-xs">
-                              <span className="text-[#866143] font-bold">1위 매칭 상품</span>
-                              <span className="font-bold text-[#292824] truncate max-w-[180px]">{item.rankings?.[0]?.name}</span>
+                            <div className="flex items-center justify-between">
+                              <span className="text-[10px] font-extrabold text-[#866143] uppercase">1위 매칭 브랜드 · 상품</span>
+                              {topRank.link && (
+                                <a
+                                  href={topRank.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  onClick={(e) => e.stopPropagation()}
+                                  className="px-2 py-0.5 rounded bg-[#866143] text-[#F2F1ED] text-[10px] font-bold hover:bg-[#292824]"
+                                >
+                                  상품 페이지 이동 ↗
+                                </a>
+                              )}
                             </div>
-                            <div className="pt-1.5 border-t border-[#DEDAD2] text-xs">
-                              <span className="text-[10px] font-bold text-[#866143] block">소비자 불만 1위 (빈틈 기회)</span>
-                              <span className="text-[#292824] font-medium line-clamp-1">“{item.vocPainPoints?.[0]?.issue}”</span>
+                            <div className="text-xs font-extrabold text-[#292824] truncate">
+                              [{topRank.brand || '브랜드'}] {topRank.name}
                             </div>
+                          </div>
+
+                          {/* 2. 현재 가장 많이 노출되는 광고 소재 요약 박스 */}
+                          <div className="p-3 rounded-xl bg-[#F2F1ED] border border-[#866143]/40 space-y-1">
+                            <div className="flex items-center justify-between">
+                              <span className="text-[10px] font-extrabold text-[#866143]">🔥 최다 노출 광고 소재 ({topAd.brand || topRank.brand})</span>
+                              {item.externalAdLinks?.metaLibrary && (
+                                <a
+                                  href={item.externalAdLinks.metaLibrary}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  onClick={(e) => e.stopPropagation()}
+                                  className="text-[10px] font-extrabold text-[#292824] underline hover:text-[#866143]"
+                                >
+                                  실제 광고 보기 ↗
+                                </a>
+                              )}
+                            </div>
+                            <div className="text-xs font-bold text-[#292824] line-clamp-1">{topAd.headline || item.thumbnailTitle}</div>
+                            <div className="text-[11px] text-[#292824]/75 line-clamp-1">연출: {topAd.visualScene || '초반 3초 비포/애프터 시연'}</div>
                           </div>
                         </div>
                       </div>
+
                       <div className="px-4 py-2.5 bg-[#E2DDD4]/60 border-t border-[#D5CFC4] flex justify-between items-center text-xs">
-                        <span className="text-[#292824]/80 truncate">{item.rankings?.[0]?.price || '실시간 최저가'}</span>
-                        <span className="font-extrabold text-[#866143] shrink-0">실시간 리포트 열기 ›</span>
+                        <span className="text-[#292824]/80 font-semibold">광고 소재 {item.topAds?.length || 3}건 · 구매 링크 {item.rankings?.length || 3}건</span>
+                        <span className="font-extrabold text-[#866143] shrink-0">광고·브랜드 상세 열기 ›</span>
                       </div>
                     </article>
                   );
@@ -477,26 +476,58 @@
             </main>
           </div>
 
-          {/* 상세 리포트 모달 */}
+          {/* 상세 리포트 모달 (브랜드, 실링크, 최다 노출 광고 소재 집중 해부) */}
           {activeRef && (
             <div onClick={() => setActiveRef(null)} className="fixed inset-0 z-50 bg-[#292824]/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
               <div onClick={(e) => e.stopPropagation()} className="bg-[#F2F1ED] border-2 border-[#866143] rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto p-5 sm:p-6 shadow-2xl">
-                <div className="flex items-center justify-between pb-4 mb-5 border-b border-[#D5CFC4]">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-5 border-b border-[#D5CFC4] gap-3">
                   <div>
                     <span className="text-xs font-extrabold text-[#866143]">{activeRef.categoryLabel} · {activeRef.growth} ▲</span>
-                    <h2 className="text-lg sm:text-xl font-extrabold text-[#292824]">{activeRef.keyword} (실시간 시장조사 리포트)</h2>
+                    <h2 className="text-lg sm:text-xl font-extrabold text-[#292824]">{activeRef.keyword} — 브랜드 · 링크 · 광고소재 리포트</h2>
                   </div>
-                  <button onClick={() => setActiveRef(null)} className="px-3 py-1.5 rounded-xl bg-[#EAE6DF] border border-[#D5CFC4] text-xs font-bold text-[#292824]">닫기 ✕</button>
+                  <div className="flex items-center gap-2">
+                    {activeRef.externalAdLinks?.metaLibrary && (
+                      <a
+                        href={activeRef.externalAdLinks.metaLibrary}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1.5 rounded-xl bg-[#866143] text-[#F2F1ED] text-xs font-extrabold hover:bg-[#292824]"
+                      >
+                        메타 광고 라이브러리 원문 ↗
+                      </a>
+                    )}
+                    <button onClick={() => setActiveRef(null)} className="px-3 py-1.5 rounded-xl bg-[#EAE6DF] border border-[#D5CFC4] text-xs font-bold text-[#292824]">닫기 ✕</button>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                  {/* 좌측: 숏폼 후킹 타임라인 & 외부 플랫폼 직결 링크 */}
                   <div className="lg:col-span-5 space-y-4">
                     <div className="p-4 rounded-2xl bg-[#EAE6DF] border border-[#D5CFC4]">
                       <div className="text-xs font-bold text-[#866143] mb-1">{activeRef.memeTag}</div>
                       <div className="text-base font-extrabold text-[#292824] mb-1">{activeRef.thumbnailTitle}</div>
                       <p className="text-xs text-[#292824]/80 mb-3">{activeRef.thumbnailSub}</p>
-                      <div className="text-[11px] font-bold text-[#866143] pt-2 border-t border-[#D5CFC4]">{activeRef.format}</div>
+
+                      {/* 플랫폼별 실제 검색 결과 바로가기 링크 모음 */}
+                      <div className="pt-3 border-t border-[#D5CFC4] space-y-1.5">
+                        <div className="text-[11px] font-extrabold text-[#866143]">🔗 플랫폼별 실제 노출 페이지 바로가기</div>
+                        <div className="flex flex-wrap gap-1.5">
+                          {activeRef.externalAdLinks?.metaLibrary && (
+                            <a href={activeRef.externalAdLinks.metaLibrary} target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded-lg bg-[#292824] text-[#F2F1ED] text-[11px] font-bold">메타(인스타) 광고소재 ↗</a>
+                          )}
+                          {activeRef.externalAdLinks?.naverShopping && (
+                            <a href={activeRef.externalAdLinks.naverShopping} target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded-lg bg-[#F2F1ED] border border-[#D5CFC4] text-[#292824] text-[11px] font-bold">네이버 쇼핑 랭킹 ↗</a>
+                          )}
+                          {activeRef.externalAdLinks?.oliveyoungSearch && (
+                            <a href={activeRef.externalAdLinks.oliveyoungSearch} target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded-lg bg-[#F2F1ED] border border-[#D5CFC4] text-[#292824] text-[11px] font-bold">올리브영 검색 ↗</a>
+                          )}
+                          {activeRef.externalAdLinks?.musinsaSearch && (
+                            <a href={activeRef.externalAdLinks.musinsaSearch} target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded-lg bg-[#F2F1ED] border border-[#D5CFC4] text-[#292824] text-[11px] font-bold">무신사 검색 ↗</a>
+                          )}
+                        </div>
+                      </div>
                     </div>
+
                     <div className="space-y-2">
                       <div className="text-xs font-extrabold text-[#866143]">숏폼 후킹 타임라인 해부</div>
                       {activeRef.hookStructure?.map((h, i) => (
@@ -508,39 +539,90 @@
                     </div>
                   </div>
 
+                  {/* 우측: 4대 핵심 분석 탭 */}
                   <div className="lg:col-span-7 space-y-4">
                     <div className="grid grid-cols-4 gap-1.5 p-1 bg-[#EAE6DF] rounded-xl border border-[#D5CFC4]">
-                      <button onClick={() => setActiveTab('market')} className={`py-2 rounded-lg text-xs font-bold ${activeTab === 'market' ? 'bg-[#866143] text-[#F2F1ED]' : 'text-[#292824]'}`}>실시간 랭킹</button>
-                      <button onClick={() => setActiveTab('voc')} className={`py-2 rounded-lg text-xs font-bold ${activeTab === 'voc' ? 'bg-[#866143] text-[#F2F1ED]' : 'text-[#292824]'}`}>리뷰 빈틈(VOC)</button>
-                      <button onClick={() => setActiveTab('ai')} className={`py-2 rounded-lg text-xs font-bold ${activeTab === 'ai' ? 'bg-[#866143] text-[#F2F1ED]' : 'text-[#292824]'}`}>AI 대본·카피</button>
-                      <button onClick={() => setActiveTab('funnel')} className={`py-2 rounded-lg text-xs font-bold ${activeTab === 'funnel' ? 'bg-[#866143] text-[#F2F1ED]' : 'text-[#292824]'}`}>퍼널 전략</button>
+                      <button onClick={() => setActiveTab('ads')} className={`py-2 rounded-lg text-xs font-extrabold ${activeTab === 'ads' ? 'bg-[#866143] text-[#F2F1ED]' : 'text-[#292824]'}`}>🔥 인기 광고소재</button>
+                      <button onClick={() => setActiveTab('market')} className={`py-2 rounded-lg text-xs font-extrabold ${activeTab === 'market' ? 'bg-[#866143] text-[#F2F1ED]' : 'text-[#292824]'}`}>🏷️ 브랜드·링크</button>
+                      <button onClick={() => setActiveTab('voc')} className={`py-2 rounded-lg text-xs font-extrabold ${activeTab === 'voc' ? 'bg-[#866143] text-[#F2F1ED]' : 'text-[#292824]'}`}>💬 리뷰 빈틈</button>
+                      <button onClick={() => setActiveTab('ai')} className={`py-2 rounded-lg text-xs font-extrabold ${activeTab === 'ai' ? 'bg-[#866143] text-[#F2F1ED]' : 'text-[#292824]'}`}>🎬 AI 대본</button>
                     </div>
 
+                    {/* 탭 1: 현재 노출이 가장 많이 되고 있는 광고 소재 리스트 */}
+                    {activeTab === 'ads' && (
+                      <div className="space-y-3">
+                        <div className="text-xs font-extrabold text-[#866143]">
+                          현재 "{activeRef.keyword}" 카테고리에서 노출량이 가장 많은 대표 광고 소재 (Winning Creatives)
+                        </div>
+                        {activeRef.topAds?.map((ad, idx) => (
+                          <div key={idx} className="p-4 rounded-2xl bg-[#EAE6DF] border border-[#D5CFC4] space-y-2.5">
+                            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#D5CFC4] pb-2">
+                              <div className="flex items-center gap-2">
+                                <span className="px-2 py-0.5 rounded bg-[#866143] text-[#F2F1ED] text-[11px] font-extrabold">집행 브랜드: {ad.brand}</span>
+                                <span className="text-[11px] font-bold text-[#292824]/80">{ad.platform}</span>
+                              </div>
+                              <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#F2F1ED] border border-[#D5CFC4] text-[#866143]">{ad.adType}</span>
+                            </div>
+
+                            <div>
+                              <div className="text-[10px] font-bold text-[#866143]">메인 광고 헤드카피 (후킹 문구)</div>
+                              <div className="text-sm font-extrabold text-[#292824] mt-0.5">{ad.headline}</div>
+                            </div>
+
+                            <div className="p-3 rounded-xl bg-[#F2F1ED] border border-[#D5CFC4] text-xs space-y-1">
+                              <div><span className="font-extrabold text-[#866143]">🎥 초반 3초 비주얼 연출:</span> {ad.visualScene}</div>
+                              <div><span className="font-extrabold text-[#866143]">👉 전환 유도(CTA):</span> {ad.ctaText}</div>
+                            </div>
+
+                            <div className="flex flex-wrap items-center gap-2 pt-1">
+                              {ad.metaAdLibraryUrl && (
+                                <a href={ad.metaAdLibraryUrl} target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded-lg bg-[#292824] text-[#F2F1ED] text-[11px] font-bold hover:bg-[#866143]">
+                                  메타 광고 라이브러리에서 {ad.brand} 광고 보기 ↗
+                                </a>
+                              )}
+                              {ad.youtubeShortsUrl && (
+                                <a href={ad.youtubeShortsUrl} target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded-lg bg-[#F2F1ED] border border-[#D5CFC4] text-[#292824] text-[11px] font-bold hover:border-[#866143]">
+                                  유튜브 쇼츠 소재 보기 ↗
+                                </a>
+                              )}
+                              {ad.tiktokCreativeUrl && (
+                                <a href={ad.tiktokCreativeUrl} target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded-lg bg-[#F2F1ED] border border-[#D5CFC4] text-[#292824] text-[11px] font-bold hover:border-[#866143]">
+                                  틱톡 바이럴 영상 보기 ↗
+                                </a>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* 탭 2: 실시간 브랜드명 & 실제 상품 구매 링크 */}
                     {activeTab === 'market' && (
                       <div className="space-y-4">
-                        <div className="p-4 rounded-2xl bg-[#EAE6DF] border border-[#D5CFC4] space-y-2">
+                        <div className="p-4 rounded-2xl bg-[#EAE6DF] border border-[#D5CFC4] space-y-2.5">
                           <div className="text-xs font-extrabold text-[#866143] mb-2">{activeRef.platformRankingTitle}</div>
                           {activeRef.rankings?.map((r) => (
-                            <div key={r.rank} className="p-3 rounded-xl bg-[#F2F1ED] border border-[#D5CFC4] flex justify-between items-center text-xs">
-                              <div>
-                                <span className="font-extrabold text-[#866143] mr-2">{r.rank}위</span>
-                                <span className="font-bold text-[#292824]">{r.name}</span>
-                                <span className="ml-2 text-[11px] text-[#866143]">({r.badge})</span>
+                            <div key={r.rank} className="p-3 rounded-xl bg-[#F2F1ED] border border-[#D5CFC4] flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                              <div className="space-y-0.5 pr-2">
+                                <div className="flex items-center gap-1.5">
+                                  <span className="font-extrabold text-[#866143]">{r.rank}위</span>
+                                  <span className="px-2 py-0.5 rounded bg-[#EAE6DF] border border-[#D5CFC4] font-extrabold text-[#292824] text-[11px]">브랜드: {r.brand || '공식처'}</span>
+                                  <span className="text-[11px] text-[#866143] font-semibold">({r.mallName || r.badge})</span>
+                                </div>
+                                <div className="font-bold text-[#292824] pt-0.5">{r.name}</div>
                               </div>
-                              <span className="font-extrabold shrink-0 ml-2">{r.price}</span>
-                            </div>
-                          ))}
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                          {Object.entries(activeRef.channelMetrics || {}).map(([k, v]) => (
-                            <div key={k} className="p-3 rounded-xl bg-[#EAE6DF] border border-[#D5CFC4] flex justify-between items-center">
-                              <div>
-                                <div className="text-xs font-bold text-[#292824]">{v.label}</div>
-                                <div className="text-[11px] text-[#292824]/70">{v.sub}</div>
-                              </div>
-                              <div className="text-right">
-                                <div className="text-sm font-extrabold text-[#292824]">{v.value}</div>
-                                <div className="text-[11px] font-bold text-[#866143]">{v.growth}</div>
+                              <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
+                                <span className="font-extrabold text-sm text-[#292824]">{r.price}</span>
+                                {r.link && (
+                                  <a
+                                    href={r.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="px-3 py-1.5 rounded-lg bg-[#866143] text-[#F2F1ED] text-[11px] font-extrabold hover:bg-[#292824]"
+                                  >
+                                    구매 링크 ↗
+                                  </a>
+                                )}
                               </div>
                             </div>
                           ))}
@@ -548,6 +630,7 @@
                       </div>
                     )}
 
+                    {/* 탭 3: 리뷰 빈틈 */}
                     {activeTab === 'voc' && (
                       <div className="space-y-3">
                         {activeRef.vocPainPoints?.map((v, i) => (
@@ -565,6 +648,7 @@
                       </div>
                     )}
 
+                    {/* 탭 4: AI 대본 */}
                     {activeTab === 'ai' && (
                       <div className="space-y-3">
                         <div className="p-4 rounded-2xl bg-[#EAE6DF] border border-[#D5CFC4]">
@@ -583,13 +667,6 @@
                             </button>
                           </div>
                         ))}
-                      </div>
-                    )}
-
-                    {activeTab === 'funnel' && (
-                      <div className="p-4 rounded-2xl bg-[#EAE6DF] border border-[#866143] text-xs leading-relaxed text-[#292824] font-medium">
-                        <div className="font-extrabold text-[#866143] mb-2">크로스 채널 마케팅 퍼널 설계</div>
-                        {activeRef.crossChannelFunnel}
                       </div>
                     )}
                   </div>
